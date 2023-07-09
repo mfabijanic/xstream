@@ -82,7 +82,8 @@ UI_FILE = "xstream.ui"
 
 
 # This is very important!
-GObject.threads_init()
+# Since version 3.11, calling threads_init is no longer needed.
+#GObject.threads_init()
 Gst.init(None)
 
 
